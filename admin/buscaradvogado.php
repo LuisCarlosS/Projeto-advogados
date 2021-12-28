@@ -13,7 +13,7 @@ require_once "../funcoes/conexoes.php";
     <form action="buscaradvogado.php" method="post" id="buscar">
         <div>
             <label for="">Nome:</label><br><br>
-            <select type="text" name="nome_adv" id="nome_adv">
+            <select name="nome_adv" id="nome_adv">
                 <option value="">TODOS</option>
                 <?php
                 $sql = "select id, nome_adv from tbadvogado order by nome_adv";

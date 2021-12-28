@@ -13,7 +13,7 @@ require_once "../funcoes/conexoes.php";
     <form action="buscarvara.php" method="post" id="buscar">
         <div>
             <label for="">Nome:</label><br><br>
-            <select type="text" name="nome_vara" id="nome_vara">
+            <select name="nome_vara" id="nome_vara">
                 <option value="">TODOS</option>
                 <?php
                 $sql = "select id, nome_vara from tbvara order by nome_vara";

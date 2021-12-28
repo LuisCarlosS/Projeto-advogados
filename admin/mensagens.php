@@ -13,7 +13,7 @@ require_once "../funcoes/conexoes.php";
     <form action="mensagens.php" method="post" id="buscar">
         <div>
             <label for="">Assunto:</label><br><br>
-            <select type="text" name="assunto" id="assunto">
+            <select name="assunto" id="assunto">
                 <option value="">TODOS</option>
                 <?php
                 $sql = "select id, assunto from tbmensagem order by assunto";

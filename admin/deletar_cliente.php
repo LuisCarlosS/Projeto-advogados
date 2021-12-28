@@ -7,9 +7,9 @@ $id = $_GET["id"];
 
 $sql = "DELETE FROM tbcliente WHERE id = " . $id;
 if(mysqli_query($conn, $sql)){
-    echo "Cliente excluido com sucesso!";
+    echo "<div class= mensagem>Cliente excluido com sucesso!</div>";
 }else{
-    echo "Erro ao excluir o cliente!";
+    echo "<div class= mensagem>Erro ao excluir o cliente!</div>";
 }
 
 mysqli_close($conn);

@@ -7,9 +7,9 @@ $id = $_GET["id"];
 
 $sql = "DELETE FROM tbaudiencia WHERE id = " . $id;
 if(mysqli_query($conn, $sql)){
-    echo "Audiência excluida com sucesso!";
+    echo "<div class= mensagem>Audiência excluida com sucesso!</div>";
 }else{
-    echo "Erro ao excluir a audiência!";
+    echo "<div class= mensagem>Erro ao excluir a audiência!</div>";
 }
 
 mysqli_close($conn);

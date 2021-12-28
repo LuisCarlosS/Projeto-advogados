@@ -7,9 +7,9 @@ $id = $_GET["id"];
 
 $sql = "DELETE FROM tbvara WHERE id = " . $id;
 if(mysqli_query($conn, $sql)){
-    echo "Vara excluida com sucesso!";
+    echo "<div class= mensagem>Vara excluida com sucesso!</div>";
 }else{
-    echo "Erro ao excluir a vara!";
+    echo "<div class= mensagem>Erro ao excluir a vara!</div>";
 }
 
 mysqli_close($conn);

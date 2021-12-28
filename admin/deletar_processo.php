@@ -7,9 +7,9 @@ $id = $_GET["id"];
 
 $sql = "DELETE FROM tbprocesso WHERE id = " . $id;
 if(mysqli_query($conn, $sql)){
-    echo "Processo excluido com sucesso!";
+    echo "<div class= mensagem>Processo excluido com sucesso!</div>";
 }else{
-    echo "<p>Erro ao excluir o processo!</p>";
+    echo "<div class= mensagem>Erro ao excluir o processo</div>";
 }
 
 mysqli_close($conn);

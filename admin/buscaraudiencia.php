@@ -14,7 +14,7 @@ require_once "../funcoes/funcao.php";
 <form action="buscaraudiencia.php" method="post" id="buscar">
     <div>
         <label for="advogado">Advogado:</label><br><br>
-        <select type="text" name="nome_adv" id="nome_adv">
+        <select name="nome_adv" id="nome_adv">
             <option value="">TODOS</option>
             <?php
             $sql = "select id, nome_adv from tbadvogado order by nome_adv";

@@ -7,9 +7,9 @@ $id = $_GET["id"];
 
 $sql = "DELETE FROM tbadvogado WHERE id = " . $id;
 if(mysqli_query($conn, $sql)){
-    echo "Cadastro excluido com sucesso!";
+    echo "<div class= mensagem>Cadastro excluido com sucesso!</div>";
 }else{
-    echo "<p>Erro ao excluir o cadastro!</p>";
+    echo "<div class= mensagem>Erro ao excluir o cadastro!</div>";
 }
 
 mysqli_close($conn);

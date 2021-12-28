@@ -14,7 +14,7 @@ require_once "../funcoes/funcao.php";
     <form action="buscarprocesso.php" method="POST" id="buscar" class="l-00">
         <div class="l-01">
             <label for="advogado">Advogado:</label>
-            <select type="text" name="advogado" id="advogado">
+            <select name="advogado" id="advogado">
                 <option value="">TODOS</option>
                 <?php
                 $sql = "select id, nome_adv from tbadvogado order by nome_adv";
@@ -30,7 +30,7 @@ require_once "../funcoes/funcao.php";
         </div>
         <div class="l-01">
             <label for="cliente">Cliente:</label>
-            <select type="text" name="cliente" id="cliente">
+            <select name="cliente" id="cliente">
                 <option value="">TODOS</option>
                 <?php
                 $sql = "select id, nome from tbcliente order by nome";
@@ -46,7 +46,7 @@ require_once "../funcoes/funcao.php";
         </div>
         <div class="l-01">
             <label for="situacao">Status:</label>
-            <select type="text" name="situacao" id="situacao">
+            <select name="situacao" id="situacao">
                 <option value="">TODOS</option>
                 <option value="aberto">Aberto</option>
                 <option value="ganho">Ganho</option>
